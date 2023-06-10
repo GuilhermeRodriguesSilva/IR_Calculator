@@ -31,6 +31,8 @@ public class Server {
                 out.println(autenticado);
 
                 if (autenticado) {
+                    String nomeCliente = in.readLine(); // Recebe o nome do cliente
+
                     double[] informacoesCliente = lerInformacoesCliente(in);
                     double rendaBrutaAnual = informacoesCliente[0];
                     int idade = (int) informacoesCliente[1];
@@ -45,7 +47,7 @@ public class Server {
 
                     String impostoFormatado = formatarValorDecimal(impostoDeRenda);
 
-                    out.println(impostoFormatado);
+                    out.println(nomeCliente + ": " + impostoFormatado); // Envia o nome do cliente e o imposto formatado para o cliente
                 }
 
                 in.close();

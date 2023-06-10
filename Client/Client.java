@@ -105,6 +105,7 @@ public class Client {
 
         // Rótulos e campos de dados
         String[] labels = {
+                "Nome:",
                 "Renda:",
                 "Idade:",
                 "Despesas com Ensino:",
